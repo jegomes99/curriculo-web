@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículo de Jefferson Gomes da Silva, estudante de Análise e Desenvolvimento de Sistemas.">
+    <title>Jefferson Gomes da Silva | Currículo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main class="curriculo">
+        <header class="cabecalho">
+            <div class="identificacao">
+                <p class="rotulo"><span aria-hidden="true"></span> Currículo profissional</p>
+                <h1 id="nome"></h1>
+                <p class="titulo" id="titulo"></p>
+                <p class="cidade" id="cidade"></p>
+            </div>
+            <img class="foto" id="foto" alt="Foto de perfil" width="160" height="180" hidden>
+        </header>
+
+        <nav class="contatos" id="contatos" aria-label="Contatos profissionais"></nav>
+
+        <div class="corpo">
+            <div class="coluna-principal">
+                <section aria-labelledby="perfil">
+                    <h2 id="perfil">Perfil profissional</h2>
+                    <p class="resumo" id="resumo"></p>
+                </section>
+
+                <section aria-labelledby="experiencia-titulo">
+                    <h2 id="experiencia-titulo">Experiência profissional</h2>
+                    <ul class="registros" id="experiencia"></ul>
+                </section>
+
+                <section aria-labelledby="formacao-titulo">
+                    <h2 id="formacao-titulo">Formação acadêmica</h2>
+                    <ul class="registros" id="formacao"></ul>
+                </section>
+            </div>
+
+            <div class="coluna-lateral">
+                <section aria-labelledby="objetivo-titulo">
+                    <h2 id="objetivo-titulo">Objetivo profissional</h2>
+                    <p id="objetivo"></p>
+                    <p class="disponibilidade" id="disponibilidade"></p>
+                </section>
+
+                <section aria-labelledby="habilidades-titulo">
+                    <h2 id="habilidades-titulo">Competências</h2>
+                    <ul class="competencias" id="habilidades"></ul>
+                </section>
+
+                <section aria-labelledby="cursos-titulo">
+                    <h2 id="cursos-titulo">Cursos complementares</h2>
+                    <ul class="registros registros-compactos" id="cursos"></ul>
+                </section>
+
+                <section aria-labelledby="idiomas-titulo">
+                    <h2 id="idiomas-titulo">Idiomas</h2>
+                    <ul class="registros registros-compactos" id="idiomas"></ul>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
