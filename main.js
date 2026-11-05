@@ -200,7 +200,7 @@ function adicionarContato(texto, endereco, destaque = false) {
     if (!endereco) return;
 
     const link = document.createElement('a');
-    link.className = destaque ? 'contato contato-principal' : 'contato';
+    link.className = destaque ? 'botao primario' : 'botao secundario';
     link.textContent = texto;
     link.href = endereco;
     elemento('contatos').appendChild(link);
@@ -266,14 +266,14 @@ function juntarDetalhes(...detalhes) {
 function mostrarCurriculo(cv) {
     const pessoa = cv.personalInformation;
 
-    document.title = pessoa.fullName + ' | Currículo';
+    document.title = pessoa.fullName + ' | Portfólio profissional';
     elemento('nome').textContent = pessoa.fullName;
     elemento('titulo').textContent = pessoa.professionalTitle;
     elemento('cidade').textContent = juntarDetalhes(pessoa.location.city, pessoa.location.state);
 
     if (pessoa.profilePhoto) {
         elemento('foto').src = pessoa.profilePhoto;
-        elemento('foto').hidden = false;
+        elemento('retrato').hidden = false;
     }
 
     adicionarContato('WhatsApp', linkWhatsApp(pessoa.whatsapp), true);

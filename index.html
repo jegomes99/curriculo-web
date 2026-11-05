@@ -3,66 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Currículo de Jefferson Gomes da Silva, estudante de Análise e Desenvolvimento de Sistemas.">
-    <title>Jefferson Gomes da Silva | Currículo</title>
+    <meta name="description" content="Portfólio profissional de Jefferson Gomes da Silva, estudante de ADS com experiência em design gráfico e interesse em desenvolvimento web.">
+    <title>Jefferson Gomes da Silva | Portfólio profissional</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
-    <main class="curriculo">
-        <header class="cabecalho">
-            <div class="identificacao">
-                <p class="rotulo"><span aria-hidden="true"></span> Currículo profissional</p>
+    <a class="pular" href="#principal">Pular para o conteúdo</a>
+    <header class="topo" id="inicio">
+        <div class="container barra">
+            <a class="marca" href="#inicio" aria-label="Jefferson Gomes, início">
+                <span class="monograma" aria-hidden="true">JG</span>
+                <span>Jefferson Gomes</span>
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#trajetoria">Experiência</a>
+                <a href="#estudos">Formação</a>
+                <a class="menu-contato" href="#contato">Contato <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="principal">
+        <section class="container hero" aria-labelledby="nome">
+            <div class="hero-texto">
+                <p class="selo"><span aria-hidden="true"></span> Em busca de estágio em tecnologia</p>
                 <h1 id="nome"></h1>
                 <p class="titulo" id="titulo"></p>
                 <p class="cidade" id="cidade"></p>
+                <div class="acoes">
+                    <a class="botao primario" href="#contato">Entre em contato <span aria-hidden="true">↗</span></a>
+                    <a class="botao secundario" href="#trajetoria">Ver experiência <span aria-hidden="true">↓</span></a>
+                </div>
             </div>
-            <img class="foto" id="foto" alt="Foto de perfil" width="160" height="180" hidden>
-        </header>
+            <figure class="retrato" id="retrato" hidden>
+                <img id="foto" alt="Retrato de Jefferson Gomes da Silva" width="316" height="365">
+                <figcaption><span>01 / PERFIL</span><span>DESIGN + TECNOLOGIA</span></figcaption>
+            </figure>
+        </section>
 
-        <nav class="contatos" id="contatos" aria-label="Contatos profissionais"></nav>
-
-        <div class="corpo">
-            <div class="coluna-principal">
-                <section aria-labelledby="perfil">
-                    <h2 id="perfil">Perfil profissional</h2>
-                    <p class="resumo" id="resumo"></p>
-                </section>
-
-                <section aria-labelledby="experiencia-titulo">
-                    <h2 id="experiencia-titulo">Experiência profissional</h2>
-                    <ul class="registros" id="experiencia"></ul>
-                </section>
-
-                <section aria-labelledby="formacao-titulo">
-                    <h2 id="formacao-titulo">Formação acadêmica</h2>
-                    <ul class="registros" id="formacao"></ul>
-                </section>
-            </div>
-
-            <div class="coluna-lateral">
-                <section aria-labelledby="objetivo-titulo">
-                    <h2 id="objetivo-titulo">Objetivo profissional</h2>
-                    <p id="objetivo"></p>
-                    <p class="disponibilidade" id="disponibilidade"></p>
-                </section>
-
-                <section aria-labelledby="habilidades-titulo">
-                    <h2 id="habilidades-titulo">Competências</h2>
+        <section class="faixa" id="sobre" aria-labelledby="sobre-titulo">
+            <div class="container sobre-grade">
+                <div>
+                    <p class="secao-rotulo"><span aria-hidden="true">01 /</span> Sobre mim</p>
+                    <h2 id="sobre-titulo">Do design ao desenvolvimento web</h2>
+                    <p class="texto-secao" id="resumo"></p>
+                </div>
+                <div class="painel habilidades">
+                    <h3>Competências e ferramentas</h3>
                     <ul class="competencias" id="habilidades"></ul>
-                </section>
-
-                <section aria-labelledby="cursos-titulo">
-                    <h2 id="cursos-titulo">Cursos complementares</h2>
-                    <ul class="registros registros-compactos" id="cursos"></ul>
-                </section>
-
-                <section aria-labelledby="idiomas-titulo">
-                    <h2 id="idiomas-titulo">Idiomas</h2>
-                    <ul class="registros registros-compactos" id="idiomas"></ul>
-                </section>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="container secao" id="trajetoria" aria-labelledby="trajetoria-titulo">
+            <p class="secao-rotulo"><span aria-hidden="true">02 /</span> Trajetória</p>
+            <h2 id="trajetoria-titulo">Experiência profissional</h2>
+            <ul class="registros experiencia" id="experiencia"></ul>
+        </section>
+
+        <section class="faixa" id="estudos" aria-labelledby="estudos-titulo">
+            <div class="container secao">
+                <p class="secao-rotulo"><span aria-hidden="true">03 /</span> Estudos</p>
+                <h2 id="estudos-titulo">Formação acadêmica</h2>
+                <div class="formacao-grade">
+                    <ul class="registros painel" id="formacao"></ul>
+                    <div class="painel complementares">
+                        <div>
+                            <h3>Cursos complementares</h3>
+                            <ul class="registros compactos" id="cursos"></ul>
+                        </div>
+                        <div>
+                            <h3>Idiomas</h3>
+                            <ul class="registros compactos" id="idiomas"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container secao" id="contato" aria-labelledby="contato-titulo">
+            <div class="convite">
+                <p class="secao-rotulo"><span aria-hidden="true">04 /</span> Contato</p>
+                <h2 id="contato-titulo">Vamos conversar?</h2>
+                <p class="texto-secao" id="objetivo"></p>
+                <p class="disponibilidade" id="disponibilidade"></p>
+                <nav class="acoes" id="contatos" aria-label="Canais de contato"></nav>
+            </div>
+        </section>
     </main>
+
+    <footer class="container rodape">
+        <span>Jefferson Gomes <span class="rodape-divisor" aria-hidden="true">/</span> Portfólio profissional</span>
+        <a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+    </footer>
 </body>
 </html>
